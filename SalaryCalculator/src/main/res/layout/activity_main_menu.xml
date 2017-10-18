@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_strona_startowa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projekt.ActivityBackend.MainMenuPanel">
+
+    <Button
+        android:text="Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goToAdminPanel"
+        android:onClick="ShowAdministratorPanel"
+        android:layout_below="@+id/btn_goToOptions"
+        android:layout_alignLeft="@+id/btn_goToOptions"
+        android:layout_alignStart="@+id/btn_goToOptions" />
+
+    <Button
+        android:text="Opcje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goToOptions"
+        android:onClick="ShowAlertDialog"
+        android:layout_below="@+id/btn_goToCalculator"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Oblicz swoją tygodniówkę"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="183dp"
+        android:id="@+id/btn_goToCalculator"
+        android:onClick="ShowSalaryPanel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

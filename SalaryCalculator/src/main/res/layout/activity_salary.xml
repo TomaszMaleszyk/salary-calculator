@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projekt.ActivityBackend.SalaryPanel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Poniedziałek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek1"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_MondaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork1"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="Wtorek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek2"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_TuesdaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork2"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="Sroda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek3"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_WednesdaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="Czwartek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek4"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_ThursdaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="Piątek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek5"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_FridaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork5"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="Sobota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dayOfWeek6"
+            android:textStyle="normal|bold" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="12"
+            android:id="@+id/seekBar_SaturdaySalary" />
+
+        <TextView
+            android:text="Godziny pracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hoursOfWork6"
+            android:textSize="10sp" />
+
+        <Switch
+            android:text="Tryb liczenia na bieżąco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_modeOfCalculation" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTxt_paymentPerHour"
+        android:layout_width="70dp"
+        android:autoText="false"
+        android:text="11"
+        android:layout_alignBaseline="@+id/btn_calculateSalary"
+        android:layout_alignBottom="@+id/btn_calculateSalary"
+        android:layout_toLeftOf="@+id/btn_calculateSalary"
+        android:layout_toStartOf="@+id/btn_calculateSalary" />
+
+    <Button
+        android:text="Przejdź do sklepu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_goToShop"
+        android:onClick="GoToShop"
+        android:enabled="false" />
+
+    <Button
+        android:text="Oblicz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calculateSalary"
+        android:onClick="CalculateSalary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Proszę wpisać swoją stawkę godzinową:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_info"
+        android:layout_above="@+id/editTxt_paymentPerHour"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
