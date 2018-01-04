@@ -8,3 +8,5 @@ This application also has an administrator panel where You can add, remove produ
 “Salary calculator” had created in Java language on Android Studio IDE, connected by PHP scripts to database created with phpMyAdmin.
 
 It was project created in motivation to pass lectures on studies.
+
+⇒ Android Studio 2.2.3, Android 7.1.1, PHP, phpMyAdmin 4.6.
